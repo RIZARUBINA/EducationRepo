@@ -12,6 +12,8 @@
 		F3636B2F23212EA0003344CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3636B2D23212EA0003344CD /* Main.storyboard */; };
 		F3636B3123212EA0003344CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3636B3023212EA0003344CD /* Assets.xcassets */; };
 		F3636B3423212EA0003344CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3636B3223212EA0003344CD /* LaunchScreen.storyboard */; };
+		F3636B9E23225E8D003344CD /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3636B9D23225E8D003344CD /* RatingControl.swift */; };
+		F3636BA02322818D003344CD /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3636B9F2322818D003344CD /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F3636B3023212EA0003344CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3636B3323212EA0003344CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3636B3523212EA0003344CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3636B9D23225E8D003344CD /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		F3636B9F2322818D003344CD /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		F3636B1D23212EA0003344CD = {
 			isa = PBXGroup;
 			children = (
+				F3636B9D23225E8D003344CD /* RatingControl.swift */,
 				F3636B2823212EA0003344CD /* TestTableView */,
 				F3636B2723212EA0003344CD /* Products */,
 			);
@@ -57,6 +62,7 @@
 				F3636B2923212EA0003344CD /* AppDelegate.swift */,
 				F3636B2B23212EA0003344CD /* ViewController.swift */,
 				F3636B2D23212EA0003344CD /* Main.storyboard */,
+				F3636B9F2322818D003344CD /* Meal.swift */,
 				F3636B3023212EA0003344CD /* Assets.xcassets */,
 				F3636B3223212EA0003344CD /* LaunchScreen.storyboard */,
 				F3636B3523212EA0003344CD /* Info.plist */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3636BA02322818D003344CD /* Meal.swift in Sources */,
 				F3636B2C23212EA0003344CD /* ViewController.swift in Sources */,
+				F3636B9E23225E8D003344CD /* RatingControl.swift in Sources */,
 				F3636B2A23212EA0003344CD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

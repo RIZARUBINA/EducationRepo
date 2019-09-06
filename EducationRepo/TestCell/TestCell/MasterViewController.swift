@@ -9,38 +9,53 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-
+    let data=["1","2","3","4","5","1","2","3","4","5","1","2","3","4","5","1","2","3","4","5"]
+    private var dateCellExpanded: [Bool] = [false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+    //private var dateCellExpanded: Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        tableView.tableFooterView = UIView()
     }
 
-    // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return data.count
     }
 
-    /*
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let dataInCell=data[indexPath.row]
+        cell.textLabel?.text=dataInCell
+       
 
         return cell
     }
-    */
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath[1])
+            if dateCellExpanded[indexPath[1]] {
+                dateCellExpanded[indexPath[1]] = false
+            } else {
+                dateCellExpanded[indexPath[1]] = true
+            }
+            tableView.beginUpdates()
+            tableView.endUpdates()
+    }
+
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+            if dateCellExpanded[indexPath[1]] {
+                return 100
+            } else {
+                return 50
+            }
+    }
+   
 
     /*
     // Override to support conditional editing of the table view.
