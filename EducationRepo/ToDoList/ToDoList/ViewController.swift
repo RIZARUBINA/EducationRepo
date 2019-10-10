@@ -87,6 +87,7 @@ class ViewController: UIViewController {
 
 }
 
+@available(iOS 13.0, *)
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
