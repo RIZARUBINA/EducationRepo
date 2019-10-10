@@ -1,15 +1,14 @@
 //
 //  AppDelegate.swift
-//  ToDoList
+//  HitList
 //
-//  Created by Margarita Zarubina on 07/10/2019.
+//  Created by Margarita Zarubina on 09.10.2019.
 //  Copyright © 2019 Margarita Zarubina. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-@available(iOS 13.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -22,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: UISceneSession Lifecycle
 
-    @available(iOS 13.0, *)
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
@@ -44,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "ToDoList")
+        let container = NSPersistentContainer(name: "HitList")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

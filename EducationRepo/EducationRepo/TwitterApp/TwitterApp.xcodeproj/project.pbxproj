@@ -7,105 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F30AB5E4234B4416006C5E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AB5E3234B4416006C5E7A /* AppDelegate.swift */; };
-		F30AB5E6234B4416006C5E7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AB5E5234B4416006C5E7A /* SceneDelegate.swift */; };
-		F30AB5E8234B4416006C5E7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30AB5E7234B4416006C5E7A /* ViewController.swift */; };
-		F30AB5EB234B4416006C5E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30AB5E9234B4416006C5E7A /* Main.storyboard */; };
-		F30AB5EE234B4416006C5E7A /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F30AB5EC234B4416006C5E7A /* ToDoList.xcdatamodeld */; };
-		F30AB5F0234B4416006C5E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F30AB5EF234B4416006C5E7A /* Assets.xcassets */; };
-		F30AB5F3234B4416006C5E7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F30AB5F1234B4416006C5E7A /* LaunchScreen.storyboard */; };
+		F341DBD6234DD96700D07810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DBD5234DD96700D07810 /* AppDelegate.swift */; };
+		F341DBD8234DD96700D07810 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DBD7234DD96700D07810 /* SceneDelegate.swift */; };
+		F341DBDD234DD96700D07810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F341DBDB234DD96700D07810 /* Main.storyboard */; };
+		F341DBE0234DD96700D07810 /* TwitterApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F341DBDE234DD96700D07810 /* TwitterApp.xcdatamodeld */; };
+		F341DBE2234DD96900D07810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F341DBE1234DD96900D07810 /* Assets.xcassets */; };
+		F341DBE5234DD96900D07810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F341DBE3234DD96900D07810 /* LaunchScreen.storyboard */; };
+		F341DBED234DDA1E00D07810 /* TweetTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DBEC234DDA1E00D07810 /* TweetTableViewController.swift */; };
+		F341DBF4234DDFC200D07810 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F341DBF3234DDFC200D07810 /* Twitter.framework */; };
+		F341DBF5234DDFC200D07810 /* Twitter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F341DBF3234DDFC200D07810 /* Twitter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F341DBF6234DDFC200D07810 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F341DBF5234DDFC200D07810 /* Twitter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		F30AB5E0234B4416006C5E7A /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F30AB5E3234B4416006C5E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F30AB5E5234B4416006C5E7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F30AB5E7234B4416006C5E7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F30AB5EA234B4416006C5E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F30AB5ED234B4416006C5E7A /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
-		F30AB5EF234B4416006C5E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F30AB5F2234B4416006C5E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F30AB5F4234B4416006C5E7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F341DBD2234DD96700D07810 /* TwitterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F341DBD5234DD96700D07810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F341DBD7234DD96700D07810 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F341DBDC234DD96700D07810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F341DBDF234DD96700D07810 /* TwitterApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwitterApp.xcdatamodel; sourceTree = "<group>"; };
+		F341DBE1234DD96900D07810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F341DBE4234DD96900D07810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F341DBE6234DD96900D07810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F341DBEC234DDA1E00D07810 /* TweetTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewController.swift; sourceTree = "<group>"; };
+		F341DBF3234DDFC200D07810 /* Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F30AB5DD234B4416006C5E7A /* Frameworks */ = {
+		F341DBCF234DD96700D07810 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F341DBF4234DDFC200D07810 /* Twitter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F30AB5D7234B4416006C5E7A = {
+		F341DBC9234DD96700D07810 = {
 			isa = PBXGroup;
 			children = (
-				F30AB5E2234B4416006C5E7A /* ToDoList */,
-				F30AB5E1234B4416006C5E7A /* Products */,
+				F341DBD4234DD96700D07810 /* TwitterApp */,
+				F341DBD3234DD96700D07810 /* Products */,
+				F341DBF2234DDFC200D07810 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		F30AB5E1234B4416006C5E7A /* Products */ = {
+		F341DBD3234DD96700D07810 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F30AB5E0234B4416006C5E7A /* ToDoList.app */,
+				F341DBD2234DD96700D07810 /* TwitterApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F30AB5E2234B4416006C5E7A /* ToDoList */ = {
+		F341DBD4234DD96700D07810 /* TwitterApp */ = {
 			isa = PBXGroup;
 			children = (
-				F30AB5E3234B4416006C5E7A /* AppDelegate.swift */,
-				F30AB5E5234B4416006C5E7A /* SceneDelegate.swift */,
-				F30AB5E7234B4416006C5E7A /* ViewController.swift */,
-				F30AB5E9234B4416006C5E7A /* Main.storyboard */,
-				F30AB5EF234B4416006C5E7A /* Assets.xcassets */,
-				F30AB5F1234B4416006C5E7A /* LaunchScreen.storyboard */,
-				F30AB5F4234B4416006C5E7A /* Info.plist */,
-				F30AB5EC234B4416006C5E7A /* ToDoList.xcdatamodeld */,
+				F341DBEC234DDA1E00D07810 /* TweetTableViewController.swift */,
+				F341DBD5234DD96700D07810 /* AppDelegate.swift */,
+				F341DBD7234DD96700D07810 /* SceneDelegate.swift */,
+				F341DBDB234DD96700D07810 /* Main.storyboard */,
+				F341DBE1234DD96900D07810 /* Assets.xcassets */,
+				F341DBE3234DD96900D07810 /* LaunchScreen.storyboard */,
+				F341DBE6234DD96900D07810 /* Info.plist */,
+				F341DBDE234DD96700D07810 /* TwitterApp.xcdatamodeld */,
 			);
-			path = ToDoList;
+			path = TwitterApp;
+			sourceTree = "<group>";
+		};
+		F341DBF2234DDFC200D07810 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F341DBF3234DDFC200D07810 /* Twitter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F30AB5DF234B4416006C5E7A /* ToDoList */ = {
+		F341DBD1234DD96700D07810 /* TwitterApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F30AB5F7234B4416006C5E7A /* Build configuration list for PBXNativeTarget "ToDoList" */;
+			buildConfigurationList = F341DBE9234DD96900D07810 /* Build configuration list for PBXNativeTarget "TwitterApp" */;
 			buildPhases = (
-				F30AB5DC234B4416006C5E7A /* Sources */,
-				F30AB5DD234B4416006C5E7A /* Frameworks */,
-				F30AB5DE234B4416006C5E7A /* Resources */,
+				F341DBCE234DD96700D07810 /* Sources */,
+				F341DBCF234DD96700D07810 /* Frameworks */,
+				F341DBD0234DD96700D07810 /* Resources */,
+				F341DBF6234DDFC200D07810 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ToDoList;
-			productName = ToDoList;
-			productReference = F30AB5E0234B4416006C5E7A /* ToDoList.app */;
+			name = TwitterApp;
+			productName = TwitterApp;
+			productReference = F341DBD2234DD96700D07810 /* TwitterApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F30AB5D8234B4416006C5E7A /* Project object */ = {
+		F341DBCA234DD96700D07810 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Margarita Zarubina";
 				TargetAttributes = {
-					F30AB5DF234B4416006C5E7A = {
+					F341DBD1234DD96700D07810 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
-			buildConfigurationList = F30AB5DB234B4416006C5E7A /* Build configuration list for PBXProject "ToDoList" */;
+			buildConfigurationList = F341DBCD234DD96700D07810 /* Build configuration list for PBXProject "TwitterApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +141,56 @@
 				en,
 				Base,
 			);
-			mainGroup = F30AB5D7234B4416006C5E7A;
-			productRefGroup = F30AB5E1234B4416006C5E7A /* Products */;
+			mainGroup = F341DBC9234DD96700D07810;
+			productRefGroup = F341DBD3234DD96700D07810 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F30AB5DF234B4416006C5E7A /* ToDoList */,
+				F341DBD1234DD96700D07810 /* TwitterApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F30AB5DE234B4416006C5E7A /* Resources */ = {
+		F341DBD0234DD96700D07810 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F30AB5F3234B4416006C5E7A /* LaunchScreen.storyboard in Resources */,
-				F30AB5F0234B4416006C5E7A /* Assets.xcassets in Resources */,
-				F30AB5EB234B4416006C5E7A /* Main.storyboard in Resources */,
+				F341DBE5234DD96900D07810 /* LaunchScreen.storyboard in Resources */,
+				F341DBE2234DD96900D07810 /* Assets.xcassets in Resources */,
+				F341DBDD234DD96700D07810 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F30AB5DC234B4416006C5E7A /* Sources */ = {
+		F341DBCE234DD96700D07810 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F30AB5E8234B4416006C5E7A /* ViewController.swift in Sources */,
-				F30AB5E4234B4416006C5E7A /* AppDelegate.swift in Sources */,
-				F30AB5E6234B4416006C5E7A /* SceneDelegate.swift in Sources */,
-				F30AB5EE234B4416006C5E7A /* ToDoList.xcdatamodeld in Sources */,
+				F341DBD6234DD96700D07810 /* AppDelegate.swift in Sources */,
+				F341DBED234DDA1E00D07810 /* TweetTableViewController.swift in Sources */,
+				F341DBD8234DD96700D07810 /* SceneDelegate.swift in Sources */,
+				F341DBE0234DD96700D07810 /* TwitterApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F30AB5E9234B4416006C5E7A /* Main.storyboard */ = {
+		F341DBDB234DD96700D07810 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F30AB5EA234B4416006C5E7A /* Base */,
+				F341DBDC234DD96700D07810 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		F30AB5F1234B4416006C5E7A /* LaunchScreen.storyboard */ = {
+		F341DBE3234DD96900D07810 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F30AB5F2234B4416006C5E7A /* Base */,
+				F341DBE4234DD96900D07810 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +198,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F30AB5F5234B4416006C5E7A /* Debug */ = {
+		F341DBE7234DD96900D07810 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -230,7 +258,7 @@
 			};
 			name = Debug;
 		};
-		F30AB5F6234B4416006C5E7A /* Release */ = {
+		F341DBE8234DD96900D07810 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -284,36 +312,36 @@
 			};
 			name = Release;
 		};
-		F30AB5F8234B4416006C5E7A /* Debug */ = {
+		F341DBEA234DD96900D07810 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WU9G9X7432;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = TwitterApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.TwitterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		F30AB5F9234B4416006C5E7A /* Release */ = {
+		F341DBEB234DD96900D07810 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WU9G9X7432;
-				INFOPLIST_FILE = ToDoList/Info.plist;
+				INFOPLIST_FILE = TwitterApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ToDoList;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.TwitterApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -323,20 +351,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F30AB5DB234B4416006C5E7A /* Build configuration list for PBXProject "ToDoList" */ = {
+		F341DBCD234DD96700D07810 /* Build configuration list for PBXProject "TwitterApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F30AB5F5234B4416006C5E7A /* Debug */,
-				F30AB5F6234B4416006C5E7A /* Release */,
+				F341DBE7234DD96900D07810 /* Debug */,
+				F341DBE8234DD96900D07810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F30AB5F7234B4416006C5E7A /* Build configuration list for PBXNativeTarget "ToDoList" */ = {
+		F341DBE9234DD96900D07810 /* Build configuration list for PBXNativeTarget "TwitterApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F30AB5F8234B4416006C5E7A /* Debug */,
-				F30AB5F9234B4416006C5E7A /* Release */,
+				F341DBEA234DD96900D07810 /* Debug */,
+				F341DBEB234DD96900D07810 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -344,17 +372,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F30AB5EC234B4416006C5E7A /* ToDoList.xcdatamodeld */ = {
+		F341DBDE234DD96700D07810 /* TwitterApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F30AB5ED234B4416006C5E7A /* ToDoList.xcdatamodel */,
+				F341DBDF234DD96700D07810 /* TwitterApp.xcdatamodel */,
 			);
-			currentVersion = F30AB5ED234B4416006C5E7A /* ToDoList.xcdatamodel */;
-			path = ToDoList.xcdatamodeld;
+			currentVersion = F341DBDF234DD96700D07810 /* TwitterApp.xcdatamodel */;
+			path = TwitterApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = F30AB5D8234B4416006C5E7A /* Project object */;
+	rootObject = F341DBCA234DD96700D07810 /* Project object */;
 }

@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+
+@available(iOS 13.0, *)
 class ViewController: UIViewController {
     
     
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
         present(alert, animated: true)
     }
     
+    @available(iOS 13.0, *)
     func save(name: String){
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
             return

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../../../Downloads/CS193P-iOS10-master-2/Twitter/Twitter.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:TwitterApp/TwitterApp.xcodeproj">
+   </FileRef>
+</Workspace>

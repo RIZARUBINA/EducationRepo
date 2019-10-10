@@ -1,14 +1,13 @@
 //
 //  SceneDelegate.swift
-//  ToDoList
+//  HitList
 //
-//  Created by Margarita Zarubina on 07/10/2019.
+//  Created by Margarita Zarubina on 09.10.2019.
 //  Copyright © 2019 Margarita Zarubina. All rights reserved.
 //
 
 import UIKit
 
-@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
